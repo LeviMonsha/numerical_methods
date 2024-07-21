@@ -114,12 +114,12 @@ if __name__ == "__main__":
     print(f"\nПоиск решения системы дифференциального уравнения, \n"
           f"используя функцию odeint из библиотеки scipy: {result}")
 
-    # x = np.linspace(1, 3, 20)  # вектор моментов времени
-    # t0 = 1  # начальное значение
-    # t = odeint(dydx, t0, x)
-    # t = np.array(t).flatten()  # преобразование массива
-    # plt.plot(x, t, "-sr", linewidth=3)  # построение графика
-    # plt.show()
+    x = np.linspace(1, 3, 20)  # вектор моментов времени
+    t0 = 1  # начальное значение
+    t = odeint(dydx, t0, x)
+    t = np.array(t).flatten()  # преобразование массива
+    plt.plot(x, t, "-sr", linewidth=3)  # построение графика
+    plt.show()
 
 # class UnitTest_ODE(unittest.TestCase):
 #     def test_method_modified_Euler(self):
